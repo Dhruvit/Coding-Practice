@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
  * Optimal operation of Add1 and Multiple2 required for target number
  */
-public class Solution3 {
+public class Add1Multiple2 {
 
 	public static void main(String args[]){
 		System.out.println("Optimal number of Add1 and Multiple2 required for target number");

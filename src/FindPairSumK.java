@@ -4,7 +4,7 @@ import java.util.Set;
 /*
  * finding number of pair from array whose sum is k
  */
-public class Solution4 {
+public class FindPairSumK {
 
 	public static void main(String args[]){
 		int a[] = {1,3,46,1,3,9};
