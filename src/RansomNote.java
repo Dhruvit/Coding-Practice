@@ -4,12 +4,16 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Solution {
+/*
+ * Author: Dhruvit Patel
+ * Hash Table : Ransom note
+ */
+public class RansomNote {
 
 	Map<String, Integer> magazineMap;
 	Map<String, Integer> noteMap;
 	
-	public Solution(String magazine, String note) {
+	public RansomNote(String magazine, String note) {
 		// TODO Auto-generated constructor stub
 		
 		magazineMap = new HashMap<>();
@@ -73,7 +77,7 @@ public class Solution {
 	
 	if(m>=n){
 		scanner.nextLine();
-		Solution s = new Solution(scanner.nextLine(), scanner.nextLine());
+		RansomNote s = new RansomNote(scanner.nextLine(), scanner.nextLine());
 		scanner.close();
 		ans = s.solve();
 	}
