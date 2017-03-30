@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 /*
-3
-11 2 4
-4 5 6
-10 8 -12
+ 3
+ 11 2 4
+ 4 5 6
+ 10 8 -12
  */
 public class DiagonalDiffrence {
 

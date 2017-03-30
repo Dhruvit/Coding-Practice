@@ -23,32 +23,32 @@ public class TestTrieDictionary {
 		String input = "caterer";
 		System.out.print(input + ":   ");
 		System.out.println(dict.getMatchingPrefix(input));
-		System.out.println("find: "+dict.findPartial(input));
+		System.out.println("find: " + dict.findPartial(input));
 
 		input = "basement";
 		System.out.print(input + ":   ");
 		System.out.println(dict.getMatchingPrefix(input));
-		System.out.println("find: "+dict.findPartial(input));
+		System.out.println("find: " + dict.findPartial(input));
 
 		input = "are";
 		System.out.print(input + ":   ");
 		System.out.println(dict.getMatchingPrefix(input));
-		System.out.println("find: "+dict.findPartial(input));
+		System.out.println("find: " + dict.findPartial(input));
 
 		input = "arex";
 		System.out.print(input + ":   ");
 		System.out.println(dict.getMatchingPrefix(input));
-		System.out.println("find: "+dict.findPartial(input));
+		System.out.println("find: " + dict.findPartial(input));
 
 		input = "base";
 		System.out.print(input + ":   ");
 		System.out.println(dict.getMatchingPrefix(input));
-		System.out.println("find: "+dict.findPartial(input));
+		System.out.println("find: " + dict.findPartial(input));
 
 		input = "xyz";
 		System.out.print(input + ":   ");
 		System.out.println(dict.getMatchingPrefix(input));
-		System.out.println("find: "+dict.findPartial(input));
+		System.out.println("find: " + dict.findPartial(input));
 
 	}
 }
@@ -100,7 +100,7 @@ class Trie {
 
 		// iterate through all character of input string 'str' and traverse down
 		// the trie
-		
+
 		int level, prevMatch = 0;
 
 		for (level = 0; level < length; level++) {
@@ -147,10 +147,10 @@ class Trie {
 
 			HashMap<Character, TrieNode> temp = crawl.getChildren();
 
-			//check the current node is last node or not 
+			// check the current node is last node or not
 			if (temp.containsKey(ch)) {
 				crawl = temp.get(ch); // assign new crawl
-				if(crawl.isEnd()){
+				if (crawl.isEnd()) {
 					noOfMatch = 1;
 				}
 			} else

@@ -25,7 +25,7 @@ public class ComparatorTest {
 		scan.close();
 
 		Checker chk = new Checker();
-		
+
 		Arrays.sort(player, chk);
 
 		for (int i = 0; i < player.length; i++) {

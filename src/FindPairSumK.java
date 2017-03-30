@@ -6,22 +6,22 @@ import java.util.Set;
  */
 public class FindPairSumK {
 
-	public static void main(String args[]){
-		int a[] = {1,3,46,1,3,9};
-		
+	public static void main(String args[]) {
+		int a[] = { 1, 3, 46, 1, 3, 9 };
+
 		int k = 47;
 		int pair = 0;
-		
+
 		Set<Integer> mySet = new HashSet<Integer>();
-		for(int i: a){
+		for (int i : a) {
 			mySet.add(i);
 		}
-		
-		for(int i:a){
-			if(mySet.contains(k-i)){
+
+		for (int i : a) {
+			if (mySet.contains(k - i)) {
 				mySet.remove(i);
-				mySet.remove(k-i);
-				pair = pair+1;
+				mySet.remove(k - i);
+				pair = pair + 1;
 			}
 		}
 		System.out.println(pair);
